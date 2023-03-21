@@ -95,16 +95,3 @@ class Client:
             self.cur_id += 1
         log_send.info("Sent: %s", request)
         self.protocol.write_message(Message(content=request))
-
-
-async def amain() -> None:
-    async with Client().run(['echo-lsp']):
-        await asyncio.sleep(0.1)
-
-
-def main() -> None:
-    asyncio.run(amain())
-
-
-if __name__ == "__main__":
-    main()
