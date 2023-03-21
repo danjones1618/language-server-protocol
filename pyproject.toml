@@ -19,7 +19,6 @@ github="https://github.com/Thirdegree/language-server-protocol"
 Pypi="https://pypi.org/project/language-server-protocol/"
 
 [project.scripts]
-echo-lsp="lsp.client:echo_lsp"
 lspclient="lsp.client.cli:main"
 
 [tool.vulcan]
